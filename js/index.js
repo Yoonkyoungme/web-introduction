@@ -41,3 +41,29 @@ movies.forEach(function (movie) {
     <td><a href="${movie.link}" target="_blank">바로가기</a></td>`;
   tbody.appendChild(row);
 });
+
+const movieCheckboxes = document.getElementById("movie-checkboxes");
+movies.forEach(function (movie, index) {
+  const checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+  checkbox.id = "movie" + (index + 1);
+  checkbox.name = "movie";
+  checkbox.value = "Movie" + (index + 1);
+
+  const label = document.createElement("label");
+  label.htmlFor = "movie" + (index + 1);
+  label.textContent = movie.title;
+
+  movieCheckboxes.appendChild(checkbox);
+  movieCheckboxes.appendChild(label);
+});
+
+document
+  .getElementById("register-button")
+  .addEventListener("click", function () {
+    const name = document.getElementById("input-name").value;
+    const checkedMovies = document.querySelectorAll(
+      'input[name="movie"]:checked'
+    ).length;
+    alert(`${name}님, 저와 ${checkedMovies}개의 취향이 같으시네요!`);
+  });
