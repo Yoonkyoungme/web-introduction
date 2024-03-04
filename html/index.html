@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>빙봉 소개서</title>
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>빙봉 소개서</h1>
+    </header>
+    <main>
+      <section class="info-section">
+        <h2>자기소개</h2>
+        <p>이름: 빙봉</p>
+        <p>여행과 맛집 탐방하는 것을 좋아합니다.</p>
+      </section>
+
+      <section class="movie-section">
+        <h2>인생 영화 BEST5</h2>
+        <table id="movie-table">
+          <thead>
+            <tr>
+              <th>순위</th>
+              <th>제목</th>
+              <th>포스터</th>
+              <th>바로가기</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+
+      <section class="guestbook-section">
+        <h2>방명록</h2>
+        <form>
+          <div>
+            <label for="input-name">이름: </label>
+            <input type="text" id="input-name" />
+          </div>
+          <fieldset>
+            <legend>본인 취향 영화:</legend>
+            <div id="movie-checkboxes"></div>
+          </fieldset>
+          <button type="button" id="register-button" class="register-button">
+            등록
+          </button>
+          <button type="reset" id="reset-button" class="reset-button">
+            취소
+          </button>
+        </form>
+      </section>
+    </main>
+    <script type="module" src="../js/index.js" defer></script>
+  </body>
+</html>
