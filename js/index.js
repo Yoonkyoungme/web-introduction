@@ -1,7 +1,7 @@
 const movies = [
   {
     rank: 1,
-    title: "나는 오늘 어제의 너와 만난다",
+    title: "나는 내일, 어제의 너와 만난다",
     poster: "../images/나는_내일_어제의_너와_만난다.jpg",
     link: "https://tv.naver.com/v/2155587",
   },
@@ -21,13 +21,13 @@ const movies = [
     rank: 4,
     title: "인셉션",
     poster: "../images/인셉션.jpg",
-    link: "https://tv.naver.com/v/5723510",
+    link: "https://tv.naver.com/v/11868621",
   },
   {
     rank: 5,
     title: "캐치 미 이프 유 캔",
     poster: "../images/캐치_미_이프_유_캔.jpg",
-    link: "https://tv.naver.com/v/238535",
+    link: "https://tv.naver.com/v/5685332",
   },
 ];
 
